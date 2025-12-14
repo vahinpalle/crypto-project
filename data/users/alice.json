@@ -1,0 +1,12 @@
+{
+  "username": "alice",
+  "password_salt": "a8GUZxOCYeBv5hXrXFDriw==",
+  "password_hash": "/p+wp6FCQUqwgVoWpcliK1+z0lNvtFPThDnfzueYPKg=",
+  "encryption_salt": "Bc1wy7VOWQXvKooBUVfmiA==",
+  "private_key_path": "data/keys/alice_private.pem",
+  "public_key_path": "data/keys/alice_public.pem",
+  "csr_path": "data/certs/alice_csr.pem",
+  "cert_path": "data/certs/alice_cert.pem",
+  "encrypted_data": "OOsGPdkSmKAAhq8Bwt2n9EO5kT06RXZ8u+qRigGj31p9NvGLIX+eupIGS6KkI/PP6/OReSmNJX5v+D11bQaeeyJNgq+xMA==",
+  "encrypted_nonce": "Ntw3qbne3Gvm+M+d"
+}
