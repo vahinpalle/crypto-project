@@ -1,12 +1,16 @@
 {
   "username": "alice",
-  "password_salt": "a8GUZxOCYeBv5hXrXFDriw==",
-  "password_hash": "/p+wp6FCQUqwgVoWpcliK1+z0lNvtFPThDnfzueYPKg=",
-  "encryption_salt": "Bc1wy7VOWQXvKooBUVfmiA==",
+  "password_salt": "0+4mX3wlmJvXpD3twY35HA==",
+  "password_hash": "4OvHwae87WR+QPQTce4rz2kv4aYC+osreGUAYoWVx4E=",
+  "encryption_salt": "Jd7A9DO+TXW+2tQ9C8/48A==",
   "private_key_path": "data/keys/alice_private.pem",
   "public_key_path": "data/keys/alice_public.pem",
   "csr_path": "data/certs/alice_csr.pem",
   "cert_path": "data/certs/alice_cert.pem",
-  "encrypted_data": "OOsGPdkSmKAAhq8Bwt2n9EO5kT06RXZ8u+qRigGj31p9NvGLIX+eupIGS6KkI/PP6/OReSmNJX5v+D11bQaeeyJNgq+xMA==",
-  "encrypted_nonce": "Ntw3qbne3Gvm+M+d"
+  "encrypted_data": "oniHbu/vNJQ/HXayl7f/92VUf8I8F7dEAR+RzF3lfMOdT8Lj/KqePDHsBLKUZEWDrzrFH6gA9JUJ42ZDbAeLznMsNypEow==",
+  "encrypted_nonce": "BJ1/TWhk9rpCD2kG",
+  "cert_country": "JP",
+  "cert_state": "Tokyo",
+  "cert_locality": "Tokyo",
+  "cert_organization": "class"
 }

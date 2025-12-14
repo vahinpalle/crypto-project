@@ -1,0 +1,5 @@
+Encrypted message for: alice
+Encrypted at: 2025-12-14 19:16:37.787690
+
+Ciphertext (base64):
+ctJjxy+BggJEMadlAAsOtIvl8yTWp9XYZLwSm9XrdtsKzY3+2HNgq6oBT5JzczvqT0D2xOLBovqxe3+Yt3lmZtMi+NVmTf4cAHaE7L0uqXC4yoFOlKTjRgpC2I24eHi3a39+VgCL0pU7YevfdWgZIDY34cQnchEVRSub0NkrQgzXRfA/G/m4XdGiEyX81Ob3pSm2wmhq49UR9Q98H1If+7BNIXaIyJMS5XQ8ibSPuV8ybxha5nEw1PUl/ikutlVVS5hjJp99hlQ5s/XvUYVVglsvLGwVFyQNzO07uiHywePnmxgTlx+q2poY2DtufvMwEX2zMvJ5XGXq5WAgvZVjZw==
