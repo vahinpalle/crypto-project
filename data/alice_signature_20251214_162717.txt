@@ -1,7 +1,0 @@
-Message:
-hi this alice 
-
-Signature (base64):
-yWkHg8kCXyP9xY6VEtYYZNrILklzJe+nzdfYEO4+IQJX/GAdB38H5+GPccsGtZNHVre77Zj3fRAwznFeoYaWiK3aqYzfTqENAl4+sw4qr8wtMc/dNdAvxFUEWjPAi0tNOXQbhmr3scdzec7SFrAQ3ZNyXJsXgLgPnTH4huEGS2AsUeXEzs7R6945Ta5SbhgWtzi8fa1YjC07XHI247MFq5CnRelWd+caRF+nLp6cJz5PYagz3sM+5OI3xFtlhvPykmRubvAGq5zQfYZvD9tpVq8dYrsBUU3nOwHQNq1176Lga0e0V4pLOSYDS0QvyiAgpMg10xXXkYA1lguNJ00DPw==
-
-To verify, use the public key at: data/keys/alice_public.pem

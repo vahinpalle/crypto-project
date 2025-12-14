@@ -1,9 +1,0 @@
-Message:
-This is my signed message
-Testing digital signatures
-Date: 2025-12-14
-
-Signature (base64):
-OYzpYNa4BMruyfI+wLDFjpwAqME6d0BVbfI0ROgPgpa4V+TPTKPQBjVEqRrSzJ2TVH6oxJG8yWlzwG+S1dV0qAIbIGC9t2HjTWmYOHk3go/U2kSBgBy+O+y1eGEWQ8ggnNFsmUoq66IMzWB4YchAahNOSy88d04Zl/OkIXqQoiRqp4VmeNMU09OggnW+FWmoT+Mn8l+gZBt3beRI2mtzQ/53lcdbpC7HpaK0XhKBaxzCznH7lTa2tJlvzKB2YbQaK9T9W3H4eJXLs1qFK21Cfi+INbMwHtBJEI+AaOpzfnlTEDZFQ/i7dzJY7TjlKuQ4ftqql83pf5acspXOmp3tlA==
-
-To verify, use the public key at: data/keys/alice_public.pem

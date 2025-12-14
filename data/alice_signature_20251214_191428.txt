@@ -1,7 +1,0 @@
-Message:
-Test message from Alice
-
-Signature (base64):
-gVR6tbi9rgqXAwBxmT8gySOT3vq/lrEiT719mKWTc8FFK8y6ZP3jAQ8NNSacVbPK4P6bKWLMucmoD9F1GgRw5lUsoZRZy0hJamsluvwU8oUQyotrBA/uPuzeRFRJSK6TqzK3IfFSNJDFWIsX3lEwUCq/TvJnuD3Zkkzdtwi2BI9Eea5ClGh0tFBMDz8dViurYGLRt268Yxl1tkFbAOKYFtxd+3Bcc+0ZToK3dnwE71scaaaVNCIfwS9vG4mDlzuz8aGOu0xos6ex6TAqzVE7bdc7SQ4zPsUk4sWqpPbnApZmXPyMNwFQM9zaFo5m8aha+EXDTjfYvoU7JYmoJknqHg==
-
-To verify, use the public key at: data/keys/alice_public.pem

@@ -1,9 +1,0 @@
-Message:
-Hello, this is Alice
-I am signing this document
-Testing digital signatures
-
-Signature (base64):
-lxPRLTRjdlp5BNP2oXPjFSeKaLbduNhKwOnTA6SJJ9Sdz/e3KprNBavimrUWc1cWUngKx8EyStr4Wvyu7Rj3Q4EoDEm2Zj/7hRpZ/A0akTIXhzxRUHgWNhiAwJtoNXFwOofH/S1n/48tMLEafmijTGT3Cuw8jxkDdE2nEwgDraK9I8DHg5gjXjlBJ2BaRVSiLL4bq3R/eRT7nVPqMamL76fz+kQYrM6o9epLsvYYCbLP0HATefGvPoQSKjq105MfobRRTF7Xj0aS9RgfHP70tmWZooChDBK1gaOLmmb5V8PyFlcoGe9GjQ+xU3O711mG0Y5kJ/F5aFBP8nRdIXztFQ==
-
-To verify, use the public key at: data/keys/alice_public.pem

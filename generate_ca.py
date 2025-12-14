@@ -134,13 +134,17 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         ca_dir = Path(sys.argv[1])
     print("\nCA Private Key Encryption:")
-    print("You can protect the CA private key with a password (recommended).")
-    use_password = input("Use password protection? (y/n): ").strip().lower() == 'y'
-    password = None
-    if use_password:
+    print("CA private key must be password-protected.")
+    while True:
         password = input("Enter password for CA private key: ").strip()
         if not password:
-            print("Warning: No password provided. CA key will be unencrypted.")
+            print("Error: CA private key password is required. Please enter a password.")
+            continue
+        confirm_password = input("Confirm password: ").strip()
+        if password != confirm_password:
+            print("Error: Passwords do not match. Please try again.")
+            continue
+        break
     generate_root_ca(ca_dir, password)
     print("\n" + "="*60)
     print("Next steps:")
