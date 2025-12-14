@@ -661,9 +661,11 @@ def modify_account(crypto_manager: CryptoManager, username: str, current_passwor
             with open(csr_path, 'wb') as f:
                 f.write(csr_pem)
             print(f"CSR regenerated: {csr_path}")
+            cert_path = Path(user_data["cert_path"])
+            if cert_path.exists():
+                cert_path.unlink()
+                print(f"Old certificate deleted: {cert_path.name}")
             print("Note: Your certificate will need to be re-signed by the CA (Option 7).")
-            if Path(user_data["cert_path"]).exists():
-                print("Warning: Your existing certificate is now invalid and should be re-signed.")
         
         crypto_manager.save_user_data(final_username, user_data)
         print("\nAccount updated successfully!")

@@ -8,7 +8,7 @@ from cryptography.hazmat.backends import default_backend
 from datetime import datetime, timedelta
 
 
-def generate_root_ca(ca_dir: Path, password: str = None):
+def generate_root_ca(ca_dir: Path, password: str, country: str, state: str, locality: str, organization: str):
     ca_dir.mkdir(parents=True, exist_ok=True)
     print("Generating Root CA private key (4096-bit RSA)...")
     ca_private_key = rsa.generate_private_key(
@@ -17,10 +17,7 @@ def generate_root_ca(ca_dir: Path, password: str = None):
         backend=default_backend()
     )
     ca_key_path = ca_dir / "root_ca.key"
-    if password:
-        encryption = serialization.BestAvailableEncryption(password.encode('utf-8'))
-    else:
-        encryption = serialization.NoEncryption()
+    encryption = serialization.BestAvailableEncryption(password.encode('utf-8'))
     ca_key_pem = ca_private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
         format=serialization.PrivateFormat.PKCS8,
@@ -30,10 +27,10 @@ def generate_root_ca(ca_dir: Path, password: str = None):
         f.write(ca_key_pem)
     print(f"CA private key saved to: {ca_key_path}")
     subject = issuer = x509.Name([
-        x509.NameAttribute(NameOID.COUNTRY_NAME, "US"),
-        x509.NameAttribute(NameOID.STATE_OR_PROVINCE_NAME, "CA"),
-        x509.NameAttribute(NameOID.LOCALITY_NAME, "San Francisco"),
-        x509.NameAttribute(NameOID.ORGANIZATION_NAME, "CryptoCourse CA"),
+        x509.NameAttribute(NameOID.COUNTRY_NAME, country),
+        x509.NameAttribute(NameOID.STATE_OR_PROVINCE_NAME, state),
+        x509.NameAttribute(NameOID.LOCALITY_NAME, locality),
+        x509.NameAttribute(NameOID.ORGANIZATION_NAME, organization),
         x509.NameAttribute(NameOID.COMMON_NAME, "Root CA"),
     ])
     print("Generating Root CA certificate...")
@@ -145,7 +142,29 @@ if __name__ == "__main__":
             print("Error: Passwords do not match. Please try again.")
             continue
         break
-    generate_root_ca(ca_dir, password)
+    
+    print("\nCA Certificate Information:")
+    while True:
+        country = input("Country (2-letter code, e.g., US, ES, FR): ").strip().upper()
+        if len(country) != 2:
+            print("Error: Country code must be exactly 2 letters (ISO 3166-1 alpha-2).")
+            print("Examples: US, ES, FR, GB, DE, JP")
+            continue
+        break
+    state = input("State/Province: ").strip()
+    if not state:
+        print("Error: State/Province cannot be empty.")
+        sys.exit(1)
+    locality = input("City/Locality: ").strip()
+    if not locality:
+        print("Error: City/Locality cannot be empty.")
+        sys.exit(1)
+    organization = input("Organization (e.g., 'My Company CA'): ").strip()
+    if not organization:
+        print("Error: Organization cannot be empty.")
+        sys.exit(1)
+    
+    generate_root_ca(ca_dir, password, country, state, locality, organization)
     print("\n" + "="*60)
     print("Next steps:")
     print("1. Users can now register and generate CSRs")
